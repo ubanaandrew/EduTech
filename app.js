@@ -2,10 +2,12 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+var cookieParser = require('cookie-parser');
+var path = require('path');
 var passport = require('passport');
 const session = require('express-session');
 const userRouter = require('./routes/users');
-
+const indexRouter = require('./routes/index');
 
 require('./config/passport')
 
@@ -14,6 +16,11 @@ dotenv.config();
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: false, limit: '20mb' }));
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
     session({
@@ -25,7 +32,8 @@ app.use(
     
 app.use(passport.initialize());
 app.use(passport.session());
-app.use('/', userRouter);
+app.use('/users', userRouter);
+app.use('/', indexRouter);
     
 global.dbconn = "";
 
