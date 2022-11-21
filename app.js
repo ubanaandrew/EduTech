@@ -32,8 +32,8 @@ app.use(
     
 app.use(passport.initialize());
 app.use(passport.session());
-app.use('/users', userRouter);
 app.use('/', indexRouter);
+app.use('/', userRouter);
     
 global.dbconn = "";
 

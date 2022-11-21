@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="assets/img/unical.png" alt="log">
+          <span class="nav-item">Admin</span>
+        </a></li>
+        <!-- <li><a href="#">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li> -->
+        <li><a href="chat.html">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Message</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Report</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Attendance</span>
+        </a></li>
+        <!-- <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Setting</span>
+        </a></li> -->
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Curr.&TeachingDept</h1>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      <div class="users">
+        <div class="card">
+          <img src="assets/img/unical.png" alt="log">
+          <h4>Announcement</h4>
+          <!-- <p>Ui designer</p> -->
+          <div class="per">
+            <!-- <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>87%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table> -->
+          </div>
+          <a href="announcements-events.html"><button>New</button></a>
+
+        </div>
+        <div class="card">
+          <img src="assets/img/unical.png" alt="log">
+          <h4>Manage Uploads</h4>
+          <!-- <p>Progammer</p> -->
+          <div class="per">
+            <!-- <table>
+              <tr>
+                <td><span>82%</span></td>
+                <td><span>85%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table> -->
+          </div>
+          <button>Manage</button>
+        </div>
+        <div class="card">
+          <img src="assets/img/unical.png" alt="log">
+          <h4>Upload Materials</h4>
+          <!-- <p>tester</p> -->
+          <div class="per">
+            <!-- <table>
+              <tr>
+                <td><span>94%</span></td>
+                <td><span>92%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table> -->
+          </div>
+          <a href="uploads.html">
+            <button>Upload</button>
+          </a>
+        </div>
+        <div class="card">
+          <img src="assets/img/unical.png" alt="log">
+          <h4>Results</h4>
+          <!-- <p>Ui designer</p> -->
+          <div class="per">
+            <!-- <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>82%</span></td>
+              </tr>
+              <tr>
+                <td>Month</td>
+                <td>Year</td>
+              </tr>
+            </table> -->
+          </div>
+          <a href="results.html">
+            <button>Manage</button>
+          </a>
+        </div>
+      </div>
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Student List</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Depart</th>
+                <th>Matric No.</th>
+                <th>Year Joined</th>
+                <th>Graduation</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Johnson Usang</td>
+                <td>Edu Tech</td>
+                <td>EDU032422</td>
+                <td>2019/2020</td>
+                <td>2023/2024</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr class="active">
+                <td>02</td>
+                <td>Wilson Ebri</td>
+                <td>Curr. & Teaching</td>
+                <td>CUR032422</td>
+                <td>2019/2020</td>
+                <td>2023/2024</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Peace Ubangha</td>
+                <td>Curr. & Teaching</td>
+                <td>CUR032422</td>
+                <td>2015/2015</td>
+                <td>2019/2020</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>Iwara Okoi</td>
+                <td>EDU Tech</td>
+                <td>EDU032422</td>
+                <td>2017/2018</td>
+                <td>2021/2022</td>
+                <td><button>View</button></td>
+              </tr>
+              <!-- <tr >
+                <td>05</td>
+                <td>Salina</td>
+                <td>Coding</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr >
+                <td>06</td>
+                <td>Tara Smith</td>
+                <td>Testing</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+                <td><button>View</button></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

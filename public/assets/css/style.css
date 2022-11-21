@@ -20,6 +20,26 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Lato", sans-serif;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  width: 700px;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.column1 {
+  flex: 33.33%;
+  width: 700px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
